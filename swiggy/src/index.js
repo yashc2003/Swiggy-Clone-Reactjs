@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/signin',
-    element: <Sign In/>
+    element: <SignIn/>
   },
   {
     path: '/account',
@@ -34,8 +34,8 @@ root.render(
   <RouterProvider router={router}>
     
     <Home />
-    <Products />
-    <Categories />
+    <Offers />
+    <Sign />
     <Account />
     <Cart />
   </RouterProvider>
