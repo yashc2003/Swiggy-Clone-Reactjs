@@ -17,11 +17,21 @@ function Navbar() {
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-link active" to="#">Home</li>
-          <li class="nav-link active" to="/offer">Offers</li>
-          <li class="nav-link active" to="#">Help</li>
-           <li class="nav-link active" to="/sign">Sign In</li>
-          <li class="nav-link active" to="/cart">Cart</li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/offers">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/signin ">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/cart">Cart</a>
+        </li>
         </ul>
         
       </div>

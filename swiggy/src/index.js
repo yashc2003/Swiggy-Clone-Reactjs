@@ -1,14 +1,14 @@
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './views/Home/Home';
-import SignIn from './views/Sign In/Sign In';
+import Sign from './views/Sign In/Sign In';
 import Offers from './views/Offers/Offers';
 import Account from './views/Account/Account';
 import Cart from './views/Add Cart/Cart';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/home',
     element: <Home />
   },
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/signin',
-    element: <SignIn/>
+    element: <Sign/>
   },
   {
     path: '/account',

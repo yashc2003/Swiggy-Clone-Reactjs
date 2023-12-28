@@ -1,0 +1,16 @@
+.carousel-indicators{
+    margin-top: 500px;
+}
+.contener{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+    }
+.card-img{
+    height: 170px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: inset;
+}
