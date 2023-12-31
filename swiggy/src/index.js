@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import ErrorBoundary from './Componant/ErrorBoundary'; // Import your ErrorBoundary component
 import Home from './views/Home/Home';
 import Sign from './views/Sign In/Sign In';
 import Offers from './views/Offers/Offers';
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/signin',
-    element: <Sign/>
+    element: <Sign />
   },
   {
     path: '/account',
@@ -31,12 +32,13 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router}>
-    
-    <Home />
-    <Offers />
-    <Sign />
-    <Account />
-    <Cart />
-  </RouterProvider>
+  <ErrorBoundary>
+    <RouterProvider router={router}>
+      <Home />
+      <Offers />
+      <Sign />
+      <Account />
+      <Cart />
+    </RouterProvider>
+  </ErrorBoundary>
 );
